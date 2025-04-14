@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  transition: 0.3s ease all
+}
+
+.round-line{
+  @apply h-[2rem] w-[1rem] bg-[#9afc49] rounded
+}
+.round-line-text{
+  @apply text-[#9afc49] text-sm
+}
+.round-line-container{
+  @apply flex gap-[1rem] items-center
+}
+.col-container{
+  @apply flex flex-col gap-[2rem]
+}
+.green-btn{
+  @apply bg-[#9afc49] px-[2rem] py-[0.6rem] text-[0.7rem] w-fit text-white self-center
+}
+
+#card-image{
+  width: 5rem;
+}
