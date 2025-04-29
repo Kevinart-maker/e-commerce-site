@@ -13,27 +13,32 @@ interface Option {
 const options: Option[] = [
     {
         img: TbTruckDelivery,
-        title: 'FREE AND FAST DELIVERY',
-        content: 'Free delivery for all orders over $140',
+        title: '10.5k',
+        content: 'Sallers active our site',
     },
     {
         img: RiCustomerService2Fill,
-        title: '24/7 CUSTOMER SERVICE',
-        content: 'Friendly 24/7 customer support',
+        title: '33k',
+        content: 'Mopnthly Produduct Sale',
     },
     {
         img: GoShieldCheck,
-        title: 'MONEY BACK GUARANTEE',
-        content: 'We return money within 30 days',
+        title: '45.5k',
+        content: 'Customer active in our site',
+    },
+    {
+        img: GoShieldCheck,
+        title: '25k',
+        content: 'Anual gross sale in our site',
     },
 ]
 
-const Option = () => {
+const AboutStuff = () => {
     return ( 
-        <div className='py-[5rem] flex gap-[5rem] justify-center'>
+        <div className='my-3 py-[5rem] flex gap-[3rem] justify-center'>
             {
                 options.map((item, index)=>(
-                    <div key={index} className='flex flex-col gap-4 items-center text-xs'>
+                    <div key={index} className='flex flex-col gap-4 items-center text-xs border py-10 px-12 cursor-pointer hover:bg-[#DB4444] hover:text-white'>
                         <div className="bg-gray-500 rounded-full p-2">
                         <item.img size={50} className='rounded-[50%] bg-black text-white p-[0.3rem]'/>
                         </div>
@@ -48,4 +53,4 @@ const Option = () => {
      );
 }
  
-export default Option;
+export default AboutStuff;

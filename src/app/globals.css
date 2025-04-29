@@ -34,10 +34,14 @@ body {
   @apply flex gap-[1rem] items-center
 }
 .col-container{
-  @apply flex flex-col gap-[2rem]
+  @apply flex flex-col gap-[2.5rem]
 }
 .green-btn{
   @apply bg-[#9afc49] px-[2rem] py-[0.6rem] text-[0.7rem] w-fit text-white self-center
+}
+
+.red-btn{
+  @apply bg-[#DB4444] px-[2rem] py-[0.9rem] text-[0.7rem] w-fit text-white self-center cursor-pointer
 }
 
 #card-image{

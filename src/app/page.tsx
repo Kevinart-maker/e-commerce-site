@@ -2,9 +2,11 @@ import Image from "next/image";
 import HomeFrame from "@/components/HomeFrame";
 import FlashSales from "@/components/FlashSales";
 import BrowseCategory from "@/components/BrowseCategory";
+// import Explore from "@/components/explore";
 import Explore from "@/components/explore";
 import Option from "@/components/option";
-import Footer from "@/components/Footer";
+import NewArrivalSection from "@/components/NewArrival";
+// import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -17,8 +19,9 @@ export default function Home() {
       <BrowseCategory />
       <div className="line w-[100%] h-[1px] bg-slate-300"></div>
       <Explore />
+      <NewArrivalSection/>
       <Option />
-      <Footer />
+      {/* <Footer /> */}
 
       {/* how to use the image upload method */}
 

@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 import Providers from './providers';
+import Footer from "@/components/Footer";
 
 const poppins = Montserrat({
   variable: "--font-poppins",
@@ -30,10 +31,13 @@ export default function RootLayout({
       <body
         className={`${poppins.className} antialiased`}
       >
+        <div className="">
         <Navbar />
         <Providers>
           {children}
         </Providers>
+        <Footer />
+        </div>
       </body>
     </html>
   );

@@ -40,23 +40,41 @@ const Iconsdata: BrowseIcons[] = [
 ]
 
 const mapIcons = Iconsdata.map((item, index) => (
-    <div key={index} className="flex flex-col items-center gap-2 border rounded p-4 w-[7rem] hover:border-none hover:bg-[#9afc49] hover:text-white cursor-pointer">
-        <item.icon size={24} />
+    <div key={index} className="flex flex-col items-center gap-2 border rounded py-6 hover:border-none hover:bg-[#9afc49] hover:text-white cursor-pointer">
+        <item.icon size={40} />
         <p className="text-sm">{item.title}</p>
     </div>
 ))
 
 const BrowseCategory = () => {
     return ( 
-        <section className=" p-4 category col-container">
-            <div className="round-line-container">
-                <div className="round-line"></div>
-                <div className="round-line-text">Categories</div>
-            </div>
-            <h1 className="font-bold text-[1.5rem]">Browse By Category</h1>
+        // <section className="py-4 px-10 category col-container bg-green-500">
+        //     <div className="round-line-container">
+        //         <div className="round-line"></div>
+        //         <div className="round-line-text">Categories</div>
+        //     </div>
+        //     <h1 className="font-bold text-[1.5rem]">Browse By Category</h1>
 
-            <div className='flex gap-[2rem] justify-center'>
-                {mapIcons}
+        //     <div className='flex gap-[2rem] justify-between items-center'>
+        //         {mapIcons}
+        //     </div>
+        // </section>
+
+        <section className="py-10 px-[8%]">
+
+            <div>
+                <p className="text-sm mb-4 border-l-[.8rem] border-red-500 pl-3">Categories</p>
+
+                <div className="flex items-center justify-between">
+                    <h1 className="text-xl font-bold">Browse By Category</h1>
+                    <div>
+                        arrow
+                    </div>
+                </div>
+            </div>
+            
+            <div className='mt-10 grid grid-cols-6 gap-4'>
+                 {mapIcons}
             </div>
         </section>
      );
