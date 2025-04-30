@@ -1,5 +1,6 @@
 import React from "react";
 import PageLink from '@/components/PageLink'
+import Link from 'next/link'
 
 const NotFound = () => {
   return (
@@ -10,7 +11,8 @@ const NotFound = () => {
         <p className="font-semibold">
           Your visited page not found. You may return to home page
         </p>
-        <div className="red-btn">Back to home page</div>
+        {/* <div className="red-btn">Back to home page</div> */}
+        <Link href='/' className='red-btn'>Back to home page</Link>
       </div>
     </div>
   );
